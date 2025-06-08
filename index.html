@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三城空杯</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo animate__animated animate__fadeIn">我的主页</div>
+            <div class="nav-links">
+                <a href="#home" class="active"><i class="fas fa-home"></i> 首页</a>
+                <a href="#about"><i class="fas fa-user"></i> 关于我</a>
+                <a href="#motto"><i class="fas fa-star"></i> 我喜欢的电影</a>
+                <a href="#anime"><i class="fas fa-tv"></i> 我追的番</a>
+                <a href="#books"><i class="fas fa-book"></i> 我喜欢的书</a>
+                <a href="#motto"><i class="fas fa-quote-right"></i> 人生座右铭</a>
+                <a href="#contact"><i class="fas fa-envelope"></i> 联系我</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="profile-container animate__animated animate__fadeInUp">
+                <img src="images/avatar.jpg" alt="个人照片" class="profile-image">
+                <h1>你好，我是三城空杯</h1>
+                <p class="typing-text">很高兴认识你</p>
+                <div class="scroll-down">
+                    <span>向下滚动了解更多</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>双非二本院校人工智能专业，常年蹲在ACG领域，对python 人工智能 航天 科技 旅游等感兴趣。</p>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>人工智能专业</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-heart"></i>
+                            <span>ACG爱好者</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python开发</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="movies" class="section">
+            <h2 class="section-title">我喜欢的电影</h2>
+            <div class="movies-container">
+                <div class="movies-grid" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+                    <div class="movie-card" style="flex: 0 0 calc(50% - 20px); max-width: 300px;">
+                        <div class="movie-image" style="height: 200px; overflow: hidden;">
+                            <img src="images/shawshank-redemption.jpg" alt="肖申克的救赎封面" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="movie-info">
+                            <h3>肖申克的救赎</h3>
+                            <div class="movie-details">
+                                <p>导演：弗兰克·德拉邦特</p>
+                                <p>上映年份：1994年</p>
+                                <a href="anime-details/xiaoshenke.html" class="details-btn">
+                                    <i class="fas fa-info-circle"></i> 详情
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="movie-card" style="flex: 0 0 calc(50% - 20px); max-width: 300px;">
+                        <div class="movie-image" style="height: 200px; overflow: hidden;">
+                            <img src="images/pursuit-of-happyness.jpg" alt="当幸福来敲门封面" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="movie-info">
+                            <h3>当幸福来敲门</h3>
+                            <div class="movie-details">
+                                <p>导演：加布里尔·穆奇诺</p>
+                                <p>上映年份：2006年</p>
+                                <a href="anime-details/pursuit-of-happyness.html" class="details-btn">
+                                    <i class="fas fa-info-circle"></i> 详情
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="anime" class="section">
+            <h2 class="section-title">我追的番</h2>
+            <div class="anime-container">
+                <div class="anime-grid">
+                    <div class="anime-card">
+                        <div class="anime-image">
+                            <img src="images/majo-no-tabitabi.jpg" alt="魔女之旅封面">
+                        </div>
+                        <div class="anime-info">
+                            <h3>魔女之旅</h3>
+                            <div class="anime-details">
+                                <p>播放量：1.3亿</p>
+                                <p>评分：9.7</p>
+                                <a href="https://www.bilibili.com/bangumi/play/ep341208" target="_blank" class="watch-btn">
+                                    <i class="fas fa-play"></i> 观看
+                                </a>
+                                <a href="anime-details/monvzhilv.html" class="details-btn">
+                                    <i class="fas fa-info-circle"></i> 详情
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="anime-card">
+                        <div class="anime-image">
+                            <img src="images/bocchi-the-rock.jpg" alt="孤独摇滚封面">
+                        </div>
+                        <div class="anime-info">
+                            <h3>孤独摇滚！</h3>
+                            <div class="anime-details">
+                                <p>播放量：1.8亿</p>
+                                <p>评分：9.9</p>
+                                <a href="https://www.bilibili.com/bangumi/play/ss43164" target="_blank" class="watch-btn">
+                                    <i class="fas fa-play"></i> 观看
+                                </a>
+                                <a href="anime-details/guduyaogun.html" class="details-btn">
+                                    <i class="fas fa-info-circle"></i> 详情
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="anime-card">
+                        <div class="anime-image">
+                            <img src="images/violet-evergarden.jpg" alt="紫罗兰永恒花园封面">
+                        </div>
+                        <div class="anime-info">
+                            <h3>紫罗兰永恒花园</h3>
+                            <div class="anime-details">
+                                <p>播放量：2.2亿</p>
+                                <p>评分：9.8</p>
+                                <a href="https://www.bilibili.com/bangumi/play/ep173286" target="_blank" class="watch-btn">
+                                    <i class="fas fa-play"></i> 观看
+                                </a>
+                                <a href="anime-details/ziluolanyonghanhuayuan.html" class="details-btn">
+                                    <i class="fas fa-info-circle"></i> 详情
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="anime-card">
+                        <div class="anime-image">
+                            <img src="images/re-zero.jpg" alt="Re：从零开始的异世界生活封面">
+                        </div>
+                        <div class="anime-info">
+                            <h3>Re：从零开始的异世界生活</h3>
+                            <div class="anime-details">
+                                <p>播放量：1亿</p>
+                                <p>评分：9.6</p>
+                                <a href="https://www.bilibili.com/bangumi/play/ep307056" target="_blank" class="watch-btn">
+                                    <i class="fas fa-play"></i> 观看
+                                </a>
+                                <a href="anime-details/re-zero.html" class="details-btn">
+                                    <i class="fas fa-info-circle"></i> 详情
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="books" class="section">
+            <h2 class="section-title">我喜欢的书</h2>
+            <div class="books-container">
+                <div class="books-grid">
+                    <div class="book-card">
+                        <div class="book-image">
+                            <img src="images/mao-ze-dong-xuan-ji.jpg" alt="毛泽东选集封面">
+                        </div>
+                        <div class="book-info">
+                            <h3>毛泽东选集</h3>
+                            <div class="book-details">
+                                <p>作者：毛泽东</p>
+                                <p>出版年份：1991年</p>
+                                <a href="anime-details/mao-ze-dong-xuan-ji.html" class="details-btn">
+                                    <i class="fas fa-info-circle"></i> 详情
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-card">
+                        <div class="book-image">
+                            <img src="images/three-body.jpg" alt="三体系列封面">
+                        </div>
+                        <div class="book-info">
+                            <h3>三体系列</h3>
+                            <div class="book-details">
+                                <p>作者：刘慈欣</p>
+                                <p>出版年份：2008年</p>
+                                <a href="anime-details/three-body.html" class="details-btn">
+                                    <i class="fas fa-info-circle"></i> 详情
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-card">
+                        <div class="book-image">
+                            <img src="images/to-live.jpg" alt="活着封面">
+                        </div>
+                        <div class="book-info">
+                            <h3>活着</h3>
+                            <div class="book-details">
+                                <p>作者：余华</p>
+                                <p>出版年份：1993年</p>
+                                <a href="anime-details/to-live.html" class="details-btn">
+                                    <i class="fas fa-info-circle"></i> 详情
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-card">
+                        <div class="book-image">
+                            <img src="images/ming-dynasty.jpg" alt="明朝的那些事儿封面">
+                        </div>
+                        <div class="book-info">
+                            <h3>明朝的那些事儿</h3>
+                            <div class="book-details">
+                                <p>作者：当年明月</p>
+                                <p>出版年份：2006年</p>
+                                <a href="anime-details/ming-dynasty.html" class="details-btn">
+                                    <i class="fas fa-info-circle"></i> 详情
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="motto" class="section">
+            <h2 class="section-title">人生座右铭</h2>
+            <div class="motto-content" style="text-align: center; padding: 40px 0;">
+                <p style="font-size: 2.5em; color: #0066ff; font-weight: 500; line-height: 1.4;">愿此行，终抵群星</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">联系我</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>1427995652@qq.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-weixin"></i>
+                        <span>WeChat_ID:fjy20052024</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="music-player">
+        <audio id="bgMusic" loop>
+            <source src="music/background.mp3" type="audio/mp3">
+        </audio>
+        <button id="musicToggle" class="music-toggle">
+            <i class="fas fa-play"></i>
+        </button>
+        <span class="music-title">星茶会</span>
+    </div>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://space.bilibili.com/523291584?spm_id_from=333.1007.0.0" class="social-icon" target="_blank"><i class="fab fa-bilibili"></i></a>
+            <a href="https://www.douyin.com/user/self?from_tab_name=main" class="social-icon" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://github.com/sckb666" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://x.com/sckb666" class="social-icon" target="_blank"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.pixiv.net/users/111465633" class="social-icon" target="_blank">
+                <svg class="pixiv-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.935 0A4.924 4.924 0 0 0 0 4.935v14.13A4.924 4.924 0 0 0 4.935 24h14.13A4.924 4.924 0 0 0 24 19.065V4.935A4.924 4.924 0 0 0 19.065 0zm7.81 4.547c2.181 0 4.058.676 5.399 1.847a6.118 6.118 0 0 1 2.116 4.66c.005 1.854-.88 3.476-2.257 4.563-1.375 1.092-3.225 1.697-5.258 1.697-2.314 0-4.46-.842-4.46-.842v2.718c.397.116 1.048.365.635.779H5.79c-.41-.41.19-.65.644-.779V7.666c-1.053.81-1.593 1.51-1.813 2.037-.264.63-1.193.576-1.193.576l-.071-2.069c1.094-1.516 3.105-2.545 5.261-2.545.448 0 .897.025 1.337.073V4.547zm-.533 2.832a3.826 3.826 0 0 0-1.337.266v5.727s1.525.613 3.064.613c1.195 0 2.09-.337 2.705-.899.619-.564.928-1.36.928-2.265 0-.89-.321-1.667-.97-2.222-.648-.555-1.523-.826-2.654-.826-.611 0-1.177.175-1.736.524z"/>
+                </svg>
+            </a>
+        </div>
+        <div class="time-display">
+            <i class="far fa-clock"></i>
+            <span id="beijing-time">加载中...</span>
+        </div>
+        <p class="copyright">Copyright © 2024 三城空杯 All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+    <script>
+        function updateBeijingTime() {
+            const options = {
+                timeZone: 'Asia/Shanghai',
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: false
+            };
+            const beijingTime = new Date().toLocaleString('zh-CN', options);
+            document.getElementById('beijing-time').textContent = beijingTime;
+        }
+
+        updateBeijingTime();
+
+        setInterval(updateBeijingTime, 1000);
+
+        const bgMusic = document.getElementById('bgMusic');
+        const musicToggle = document.getElementById('musicToggle');
+        const musicIcon = musicToggle.querySelector('i');
+        
+        musicToggle.addEventListener('click', () => {
+            if (bgMusic.paused) {
+                bgMusic.play();
+                musicIcon.className = 'fas fa-pause';
+            } else {
+                bgMusic.pause();
+                musicIcon.className = 'fas fa-play';
+            }
+        });
+
+        window.addEventListener('load', () => {
+     
+            document.addEventListener('click', () => {
+                if (bgMusic.paused) {
+                    bgMusic.play();
+                    musicIcon.className = 'fas fa-pause';
+                }
+            }, { once: true });
+        });
+
+        const musicPlayer = document.querySelector('.music-player');
+        let isDragging = false;
+        let currentX;
+        let currentY;
+        let initialX;
+        let initialY;
+        let xOffset = 0;
+        let yOffset = 0;
+
+        musicPlayer.addEventListener('mousedown', dragStart);
+        document.addEventListener('mousemove', drag);
+        document.addEventListener('mouseup', dragEnd);
+
+        musicPlayer.addEventListener('touchstart', dragStart);
+        document.addEventListener('touchmove', drag);
+        document.addEventListener('touchend', dragEnd);
+
+        function dragStart(e) {
+            if (e.type === 'touchstart') {
+                initialX = e.touches[0].clientX - xOffset;
+                initialY = e.touches[0].clientY - yOffset;
+            } else {
+                initialX = e.clientX - xOffset;
+                initialY = e.clientY - yOffset;
+            }
+
+            if (e.target === musicPlayer || e.target.parentNode === musicPlayer) {
+                isDragging = true;
+            }
+        }
+
+        function drag(e) {
+            if (isDragging) {
+                e.preventDefault();
+
+                if (e.type === 'touchmove') {
+                    currentX = e.touches[0].clientX - initialX;
+                    currentY = e.touches[0].clientY - initialY;
+                } else {
+                    currentX = e.clientX - initialX;
+                    currentY = e.clientY - initialY;
+                }
+
+                xOffset = currentX;
+                yOffset = currentY;
+
+                const rect = musicPlayer.getBoundingClientRect();
+                const viewportWidth = window.innerWidth;
+                const viewportHeight = window.innerHeight;
+
+                if (currentX < 0) currentX = 0;
+                if (currentY < 0) currentY = 0;
+                if (currentX + rect.width > viewportWidth) currentX = viewportWidth - rect.width;
+                if (currentY + rect.height > viewportHeight) currentY = viewportHeight - rect.height;
+
+                setTranslate(currentX, currentY, musicPlayer);
+            }
+        }
+
+        function dragEnd(e) {
+            initialX = currentX;
+            initialY = currentY;
+            isDragging = false;
+        }
+
+        function setTranslate(xPos, yPos, el) {
+            el.style.transform = `translate3d(${xPos}px, ${yPos}px, 0)`;
+        }
+    </script>
+</body>
+</html> 

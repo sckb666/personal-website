@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>紫罗兰永恒花园 - 三成空杯</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2196f3;
+            --secondary-color: #ffffff;
+            --text-color: #333333;
+            --background-color: #e3f2fd;
+            --card-background: rgba(255, 255, 255, 0.9);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: var(--background-color);
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: var(--secondary-color);
+            height: 60px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .back-btn {
+            color: var(--text-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            color: var(--primary-color);
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 80px auto 40px;
+            padding: 0 20px;
+        }
+
+        .title-section {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 0;
+            background: var(--card-background);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-title {
+            font-size: 2.5em;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        .content-section {
+            background: var(--card-background);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .plot-content {
+            font-size: 1.1em;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .characters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .character-card {
+            background: var(--secondary-color);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .character-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .character-name {
+            font-size: 1.4em;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .character-description {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 2em;
+            }
+
+            .characters-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">三成空杯</div>
+            <a href="../index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+                返回首页
+            </a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="title-section">
+            <h1 class="main-title">"连缀人们的思念，为了知晓爱为何物。（思いを綴る、愛を知るために。）"</h1>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">剧情简介</h2>
+            <div class="plot-content">
+                <p>自动手记人偶（Auto Memories Doll）</p>
+                <p>这个名字名噪一时的时候，已经是相当一段时间前的事了。</p>
+                <p>奥兰德博士发明了用于书写记录人声话语的机械。</p>
+                <p>当初他仅仅为了爱妻而制造的这一机械，</p>
+                <p>不知何时已普及至全世界，甚至设立了提供借出服务的机关。</p>
+                <p>若是客人您有所期望的话，我可以去往任何地方。</p>
+                <p>我是，自动手记人偶服务，薇尔莉特·伊芙加登。</p>
+                <p>有着如同从故事书中出现般的样貌，金发碧眼的女子，</p>
+                <p>保持着无机质的美，以玲珑剔透的声音如此说道。</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">登场人物</h2>
+            <div class="characters-grid">
+                <div class="character-card">
+                    <h3 class="character-name">薇尔莉特·伊芙加登</h3>
+                    <p class="character-description">年幼时以军人身份参加了大战。由于只知道战斗，而不会理解别人的心情以及表达自己的心情。在战场上被上司吉尔伯特告知了"某句话语"我永远爱着你，虽不知晓其中含义，不过后来邂逅了代笔的职业，而开始寻求那句话的意义。</p>
+                </div>
+
+                <div class="character-card">
+                    <h3 class="character-name">克劳迪亚·霍金斯</h3>
+                    <p class="character-description">吉尔伯特在士官学校时代的好友。曾经是陆军中校，在战后离开军队，成立了C·H邮递公司。由于吉尔伯特的请求而照顾薇尔莉特。由于惹人喜欢的性格，因而也能够发挥商人的才能。</p>
+                </div>
+
+                <div class="character-card">
+                    <h3 class="character-name">吉尔伯特·布干维利亚</h3>
+                    <p class="character-description">生于代代延续的贵族的名家，陆军少校。在战时与年幼的薇尔莉特相遇，并一同与帝国军交战。对薇尔莉特来说是比什么都重要的存在。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html> 

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三体系列 - 三成空杯</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #808080;
+            --secondary-color: #ffffff;
+            --text-color: #333333;
+            --background-color: #f0f0f0;
+            --card-background: rgba(255, 255, 255, 0.9);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: var(--background-color);
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: var(--secondary-color);
+            height: 60px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .back-btn {
+            color: var(--text-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            color: var(--primary-color);
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 80px auto 40px;
+            padding: 0 20px;
+        }
+
+        .title-section {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 0;
+            background: var(--card-background);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-title {
+            font-size: 2.5em;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        .content-section {
+            background: var(--card-background);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .plot-content {
+            font-size: 1.1em;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">三成空杯</div>
+            <a href="../index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+                返回首页
+            </a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="title-section">
+            <h1 class="main-title">「给岁月以文明，而不是给文明以岁月」</h1>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">概况</h2>
+            <div class="plot-content">
+                <p>作品讲述了地球人类文明和三体文明的信息交流、生死搏杀及两个文明在宇宙中的兴衰历程。《三体》的文本叙事在"后人类"的思考上有着重大突破，构建了科学与文学的互动范式，将道德内涵引入对科技的辩证思考中，并以文学手段在文化语境中对科技进行大胆假设和重构，但科技核心只是一个叙事跳板，是完成现实超越的重要媒介，也是人类命运共同体书写的重要工具。《三体》最吸引人的地方在于通过对人类中心主义的解构，继而完成对人与自然、动物之间的伦理反思与文学表达，最终指向去人类中心化的思想内核。</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">内容介绍</h2>
+            <div class="plot-content">
+                <p>文化大革命如火如荼地进行，天文学家叶文洁在其间历经劫难，被带到军方绝秘计划"红岸工程"。叶文洁以太阳为天线，向宇宙发出地球文明的第一声啼鸣，取得了探寻外星文明的突破性进展。三颗无规则运行的太阳主导下，四光年外的"三体文明"百余次毁灭与重生，正被逼迫不得不逃离母星，而恰在此时，他们接收到了地球发来的信息。对人性绝望的叶文洁向三体人暴露了地球的坐标，彻底改变了人类的命运。</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">作品评价</h2>
+            <div class="plot-content">
+                <p>《北京日报》：《三体》以气势宏大的故事架构、瑰丽新奇的科学想象、浓郁朴素的人文反思，写成了一部带有崇高意蕴的太空史诗，征服了广大读者。《三体》所体现的，是高级别、高水平的想象力。个中关键，在于幻想的自洽。刘慈欣提供的，是一部纯粹的"硬科幻"作品，是一个与科学理论、逻辑推演都自洽的世界。诚如他曾写道，"好看的科幻小说应该是把最空灵最疯狂的想象写得像新闻报道一般真实"。为达到这种真实，自然不能免除种种束缚。进行"自我约束"的写作，要比童话式的不羁想象难出许多；也正是这种难度，和因之而成的周密、完备、自成体系，让三体世界免于坠入虚无，最终获得成功。</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html> 

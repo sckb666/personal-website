@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>毛泽东选集 - 三成空杯</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #ff0000;
+            --secondary-color: #ffffff;
+            --text-color: #333333;
+            --background-color: #ffcccc;
+            --card-background: rgba(255, 255, 255, 0.9);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: var(--background-color);
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: var(--secondary-color);
+            height: 60px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .back-btn {
+            color: var(--text-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            color: var(--primary-color);
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 80px auto 40px;
+            padding: 0 20px;
+        }
+
+        .title-section {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 0;
+            background: var(--card-background);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-title {
+            font-size: 2.5em;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        .content-section {
+            background: var(--card-background);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .plot-content {
+            font-size: 1.1em;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">三成空杯</div>
+            <a href="../index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+                返回首页
+            </a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="title-section">
+            <h1 class="main-title">"人民万岁！"</h1>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">概况</h2>
+            <div class="plot-content">
+                <p>《毛泽东选集》是1951年人民出版社出版的图书，作者是毛泽东。该书是毛泽东思想的重要载体，是毛泽东思想的集中展现，亦是对20世纪的中国影响最大的书籍之一。建国后出版的两个版本均由人民出版社负责。该书在建国前即有大量出版，1944年，晋察冀日报社出版首版《毛泽东选集》。1991年7月1日，《毛泽东选集》一至四卷第二版出版发行。</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">选集意义</h2>
+            <div class="plot-content">
+                <p>毛泽东思想具有多方面的内容，它在新民主主义革命、社会主义革命和建设、革命军队建设和军事战略、政策和策略、思想政治工作和文化工作、外交工作和党的建设等多方面，以独创性的理论丰富和发展了马克思列宁主义。毛泽东思想的活的灵魂，是贯穿于上述各个组成部分的立场、观点和方法。它们有三个基本方面，即实事求是、群众路线、独立自主。它们既表现在中国共产党人的革命活动中，也表现在毛泽东的全部科学著作中。《毛泽东选集》的出版发行，在青年、知识分子和各界人士中形成了学习毛泽东著作的热潮。毛泽东思想在全国范围内广泛传播，对中国人民的思想变化和共和国各项事业的发展产生了深远影响。</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html> 

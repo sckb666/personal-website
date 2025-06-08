@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>孤独摇滚！ - 三成空杯</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2196f3;
+            --secondary-color: #ffffff;
+            --text-color: #333333;
+            --background-color: #e3f2fd;
+            --card-background: rgba(255, 255, 255, 0.9);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: var(--background-color);
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: var(--secondary-color);
+            height: 60px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .back-btn {
+            color: var(--text-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            color: var(--primary-color);
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 80px auto 40px;
+            padding: 0 20px;
+        }
+
+        .title-section {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 0;
+            background: var(--card-background);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-title {
+            font-size: 2.5em;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        .content-section {
+            background: var(--card-background);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .plot-content {
+            font-size: 1.1em;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .characters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .character-card {
+            background: var(--secondary-color);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .character-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .character-name {
+            font-size: 1.4em;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .character-description {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 2em;
+            }
+
+            .characters-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">三成空杯</div>
+            <a href="../index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+                返回首页
+            </a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="title-section">
+            <h1 class="main-title">"阴郁的话就去玩摇滚！"</h1>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">作品简介</h2>
+            <div class="plot-content">
+                <p>作为网络吉他手"Guitar Hero"而广受好评的后藤一里，在现实中却是个什么都不会的沟通障碍者。</p>
+                <p>一里有着组建乐队的梦想，但因为不敢向人主动搭话而一直没有成功，直到一天在公园中被伊地知虹夏发现并邀请进入缺少吉他手的"结束乐队"。可是，完全没有和他人合作经历的一里，在人前完全发挥不出原本的实力。</p>
+                <p>为了努力克服沟通障碍，一里与"结束乐队"的成员们一同开始努力……</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">登场人物</h2>
+            <div class="characters-grid">
+                <div class="character-card">
+                    <h3 class="character-name">后藤一里</h3>
+                    <p class="character-description">严重的沟通障碍症患者，不敢和人主动搭话。内心话语远远多于实际说出来的。经常做出一些常人难以理解的行动。</p>
+                </div>
+
+                <div class="character-card">
+                    <h3 class="character-name">伊地知虹夏</h3>
+                    <p class="character-description">乐队的鼓手。在公园中发现了背着吉他包灰心丧气的波奇，并强拉她加入了"结束乐队"。乐队的润滑剂，善于交流。穿着也比较时尚。</p>
+                </div>
+
+                <div class="character-card">
+                    <h3 class="character-name">山田凉</h3>
+                    <p class="character-description">乐队的贝斯手、作曲担当。被别人叫做怪人会很兴奋的怪人。表情变化少，和波奇一样没什么朋友。</p>
+                </div>
+
+                <div class="character-card">
+                    <h3 class="character-name">喜多郁代</h3>
+                    <p class="character-description">乐队的吉他手和歌手，和波奇是校友。社交圈广，有很多朋友的现充。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html> 
